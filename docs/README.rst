@@ -129,28 +129,6 @@ dependency on ``mosquitto.service.clean`` via include list.
 This state will remove the mosquitto package and has a depency on
 ``mosquitto.config.clean`` via include list.
 
-``mosquitto.subcomponent``
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-*Meta-state (This is a state that includes other states)*.
-
-This state installs a subcomponent configuration file before
-configuring and starting the mosquitto service.
-
-``mosquitto.subcomponent.config``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This state will configure the mosquitto subcomponent and has a
-dependency on ``mosquitto.config`` via include list.
-
-``mosquitto.subcomponent.config.clean``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This state will remove the configuration of the mosquitto subcomponent
-and reload the mosquitto service by a dependency on
-``mosquitto.service.running`` via include list and ``watch_in``
-requisite.
-
 Testing
 -------
 

@@ -13,7 +13,7 @@ include:
 mosquitto-config-file-file-managed:
   file.managed:
     - name: {{ mosquitto.config }}
-    - source: {{ files_switch(['example.tmpl'],
+    - source: {{ files_switch(['mosquitto.conf', 'mosquitto.conf.jinja'],
                               lookup='mosquitto-config-file-file-managed'
                  )
               }}

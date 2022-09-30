@@ -7,11 +7,9 @@ values:
   pkg:
     name: mosquitto
   rootgroup: root
-  config: '/etc/mosquitto'
+  config: '/etc/mosquitto/mosquitto.conf'
   service:
     name: mosquitto
-  subcomponent:
-    config: '/etc/mosquitto-subcomponent-formula.conf'
   # Just here for testing
   added_in_defaults: defaults_value
   winner: defaults
